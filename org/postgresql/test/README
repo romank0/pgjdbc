@@ -60,6 +60,12 @@ loss of data. We recommend you assign the following names:
   username: test
   password: password
 
+The database can be created using following commands:
+  create database test;
+  create user test with password 'password';
+  grant all privileges on database test to test;
+
+
 These names correspond with the default names set for the test suite
 in $JDBC_SRC/build.xml. If you have chosen other names you need to
 create a file named $JDBC_SRC/build.local.properties and add your
